@@ -1,21 +1,28 @@
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Mail, Phone } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowDown, Github, Mail, Phone } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
-      <div className="container mx-auto max-w-4xl text-center">
-        <div className="space-y-6">
-          <div className="space-y-2">
-            <h1 className="text-5xl md:text-7xl font-bold text-balance bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Jose Luis Diaz
-            </h1>
-            <p className="text-2xl md:text-3xl font-semibold text-foreground">Programador Backend</p>
+    <section id="home" className="min-h-screen flex items-center justify-center px-0 pt-16">
+  <div className="w-full text-center">
+    <div className="space-y-6">
+      <div className="space-y-2">
+        {/* Banner ancho completo */}
+        <div className="w-full mb-12">
+          <img 
+            src="/banner.png" 
+            alt="Banner" 
+            className="w-full h-auto rounded-lg" 
+          />
+        </div>
+            <p className="text-2xl md:text-3xl font-semibold text-foreground">
+              
+            </p>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl mx-auto leading-relaxed">
-            Apasionado del mundo del desarrollo Backend, en constante aprendizaje y crecimiento. Mi objetivo es formar parte de un equipo donde pueda 
-            aportar mi entusiasmo y dedicación para crear proyectos desafiantes mientras perfecciono mis habilidades.
+            Apasionado del mundo del desarrollo Backend, en constante aprendizaje y crecimiento. Mi objetivo es formar parte de un equipo
+            donde pueda aportar mi entusiasmo y dedicación para crear proyectos desafiantes mientras perfecciono mis habilidades.
           </p>
 
           <div className="flex items-center justify-center gap-4 pt-4">
@@ -42,7 +49,10 @@ export function Hero() {
             >
               <Mail className="h-6 w-6" />
             </a>
-            <a href="tel:+34634601040" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="tel:+34634601040"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               <Phone className="h-6 w-6" />
             </a>
           </div>
@@ -53,5 +63,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

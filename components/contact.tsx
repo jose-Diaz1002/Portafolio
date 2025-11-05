@@ -67,7 +67,7 @@ export function Contact() {
       </div>
 
       <footer className="mt-24 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-        <p>© {new Date().getFullYear()} Jose Luis Diaz. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} Jose Luis Diaz.</p>
       </footer>
     </section>
   )
